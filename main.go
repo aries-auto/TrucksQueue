@@ -31,7 +31,6 @@ func main() {
 	running := 0
 
 	err = applications.ConnectToNSQLookupds(NSQDHosts)
-	log.Print("ERR", err)
 	if err == nil {
 		running = running + 1
 		wg.Add(1)
